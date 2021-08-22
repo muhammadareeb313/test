@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="app.js"></script> 
+
+</head>
+<body id="res" >
+ 
+
+<!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Restraunt</span>
+    <a href="order.html" style="color: white; text-decoration: none;">Order</a>
+  </div>
+  
+</nav>
+
+<div id="centre">
+      <select id="Select" >
+        <option value="" selected  disabled>Select Cateogary</option>
+
+        <option value="Chinese" >Chinese</option>
+        <option value="Chowmein">Chowmein</option>
+        <option value="Singaporean">Singaporean</option>
+        <option value="American">American</option>
+      </select><br>
+      <input type="text" placeholder="Item name" id="itemn"><br>
+      <input type="text" placeholder="Price" id="price"><br>
+      <input type="text" placeholder="Restaurent Name" id="Restaurent"><br>
+      <select id="Delivery" >
+        <option value="" selected disabled>Delivery Type</option>
+
+        <option value="Free" >Free</option>
+        <option value="Paid">Paid</option>
+      </select><br>
+      <input type="file" name="" id="file"><br>
+      <button class="bg-dark text-light " style="border-radius:5px ;border: 3px solid white;" onclick="send()">Send</button>
+    </div>
+
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyACf77cxLCO4ktJS0djPdkX65A5og1XLbA",
+          authDomain: "auth-f8cb1.firebaseapp.com",
+          databaseURL: "https://auth-f8cb1-default-rtdb.firebaseio.com",
+          projectId: "auth-f8cb1",
+          storageBucket: "auth-f8cb1.appspot.com",
+          messagingSenderId: "47111390187",
+          appId: "1:47111390187:web:1dd2664ccb397069744fae",
+          measurementId: "G-4RJ5TPQENN"
+        };
+        firebase.initializeApp(firebaseConfig);
+      </script> 
+      
+</body>
+</html>
+
+
+
+
+   
